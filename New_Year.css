@@ -1,0 +1,141 @@
+body{
+	background: #1A5B35;
+	padding: 0;
+}
+
+h1{
+	width: 206px;
+	height: 40px;
+	margin: 80px;
+	font-family: 'Campanella','Comforter', cursive;
+}
+
+.i1{
+	position: fixed;
+	left: 0px;
+	top: 25px;
+}
+.i2{
+	position: relative;
+	float: right;
+	top: 0px;
+	margin: -8px;
+}
+
+.t{
+	position: fixed;
+	left: 37%;
+	top: 100px;
+	bottom: 65.53%;
+}
+
+.p{
+	position: fixed;
+	left: 33.45%;
+	right: 27.01%;
+	top: 330px;
+	bottom: 250px;
+
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.i5{
+	position: fixed;
+	left: 56%;
+	right: 34.17%;
+	top: 430px;
+	bottom: 30.22%;
+}
+
+.i4{
+	position: fixed;
+	left: 45.35%;
+	right: 45.35%;
+	top: 83.59%;
+	bottom: 11.13%;
+}
+
+.i6{
+	position: relative;
+	left: 12px;
+	top: 470px;
+}
+
+.i7{
+	position: fixed;
+	left: 0;
+	bottom: -3px;
+}
+
+@media print{
+	.t{
+		margin: -15px;
+		top: 400px
+	}
+	.p{
+		width: 100%;
+		text-align: center;
+		line-height: 10px;
+		margin: -110px;
+		color: #000
+
+	}
+	.i1, .i2, .i4, .i5, .i6, .i7 {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.t, .p{
+		width: 90%;
+	}
+
+	.p{
+		display: table-column;
+		justify-content: center;
+		top: 210px;
+		left: 20px;
+
+	}
+
+	.i2, .i7 {
+		display: none;
+	}
+
+	.i1{
+		top: -25px;
+	}
+
+	.i4{
+		top: 90%;
+		left: 33%;
+	}
+
+	.i5{
+		top: 81%;
+		left: 70%;
+	}
+
+	.i6 {
+		position: relative;
+		float: right;
+		width: auto;
+		height: auto;
+		top: 70px;
+		margin: 20px;
+	}
+
+	.t{
+		top: 100px;
+		text-align: center;
+		left: -59px;
+	}
+}
